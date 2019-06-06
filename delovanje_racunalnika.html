@@ -1,0 +1,72 @@
+<html>
+  <head>
+	<title>Računalništvo</title>
+	<link rel="stylesheet" href="style.css">
+	<meta charset="utf-8">
+  </head>
+  
+  <body>
+	<header>
+		<img src="naslovna_slika.png" width="1300">
+	</header>
+	
+	<!-- meni in dropdown -->
+	<div class="menu-background">
+		<ul id="menu">
+			<a href="index.html"><li>Domov</li></a>
+			<div class="dropdown">
+				<li>Zgradba računalnika</li>
+				<div class="dropdown-content">
+					<a href="strojna_oprema.html">Strojna oprema</a>
+					<a href="programska_oprema.html">Programska oprema</a>
+				</div>
+			</div>
+			
+			<a href="delovanje_racunalnika.html"><li>Delovanje računalnika</li></a>
+			<a href="zanimivosti.html"><li>Zanimivosti</li></a>
+			<a href="viri.html"><li>Viri</li></a>
+		</ul>
+	</div>
+
+	
+	<div id="page-container">
+		<!-- vsebina -->
+		<div id="content-wrap">
+			<h1>Von Neumannov model računalnika</h1>
+			<p>Velika večina današnjih računalnikov deluje <b>po principu von Neumannovega modela računalnika</b>, pri čemer so glavni trije gradniki te arhitekture centralno procesna enota,
+			pomnilnik ter vhodno-izhodni sistem. Predstavitev in delitev le-teh najdete na povezavi <a href="strojna_oprema.html" target="_blank">strojna oprema</a>.</p>
+			<p>Enostaven opis delovanja običajnega računalnika po korakih:</p>
+			
+			<img src="delovanje.png" width="435" height="320" class="delovanje_slika">
+			
+			<p>Krmilna enota prebere strojni ukaz (ukaz, ki je zapisan v strojnem jeziku) iz pomnilnika z lokacije oz. naslova, na katerega pokaže programski števec (PC). To je eden od
+			registrov v centralno procesni enoti, ki hrani naslov naslednjega ukaza, ki naj se izvede.</p>
+			<p>Ukaz se nato prenese v procesor, kjer se začne dekodiranje. To je postopek, s katerim se iz ukaza ugotavlja, kakšna operacija naj se izvede v aritmetično-logični enoti in
+			kje so operandi, nad katerimi naj se ukaz izvrši. Ti so običajno v registrih, če pa ne, jih dobimo iz pomnilnika ali vhodno-izhodne enote.</p>
+			<p>Pripravljeni operandi se prenesejo na vhod aritmetično-logične enote, ki nad njimi izvede zahtevano operacijo. Na koncu se rezultat operacije shrani bodisi v notranje 
+			registre bodisi v pomnilnik ali na vhodno-izhodno enoto.</p>
+			<p>Ko se nek ukaz izvrši, se takoj zatem začne branje novega ukaza, katerega naslov je hranil programski števec že takrat, ko je pokazal na predhodni ukaz,
+			zato je delovanje računalnika zaporedno delovanje (oznaka PC = PC + 1).</p>
+			
+			<h2 class="p_margin">Vodila</h2>
+			<p>Pri delovanju računalnika velja omeniti še vodila, ki so pomemben sestavni del računalnika, saj povezujejo osnovne gradnike von Neumannove arhitekture.</p>
+			
+			<ul id="list">
+				<li><b>Naslovno vodilo</b></li>
+				<p>Naslovno vodilo je del računalniškega vodila, ki naslavlja lokacije v pomnilniku, s katerih centralno procesna enota zajema ukaze in podatke ali pa le-te na te lokacije vpisuje.
+				Koliko lokacij v pomnilniku lahko centralno procesna enota naslovi, je odvisno od širine naslovnega vodila.</p>
+				<li><b>Podatkovno vodilo</b></li>
+				<p>Podatkovno vodilo je namenjeno prenosu podatkov med centralno procesno enoto, pomnilnikom in vhodno-izhodnimi napravami. Njihovo število je enako največjemu številu
+				bitov, ki se prenašajo naenkrat. To število imenujemo širina prenosne poti.</p>
+				<li><b>Kontrolno vodilo</b></li>
+				<p>Kontrolno vodilo je del računalniškega vodila, preko katerega centralno procesna enota komunicira z drugimi napravami. Signali tega vodila 
+				določajo smer prenosa (branje ali pisanje), število prenešenih bitov in časovno zaporedje dogodkov med prenosom.</p>
+			</ul>
+			<img src="vodila.png" width="600" class="picture_margin">
+		</div>
+
+		<footer id="footer">&copy; Maja Kosmač 2019</footer>
+	</div>
+	
+  </body>
+</html>
