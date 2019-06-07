@@ -101,13 +101,9 @@ h2 {
 	font-size: 25px;
 	color: #660000;
 	text-align: left;
-	margin-top: 50px;
+	margin-top: 35px;
 }
 
-/* h2 (vhodno-izhodni sistem), ki mora imeti margin */
-.vi {
-	margin-top: 190px;
-}
 
 /* visina vrstice oz. povečanje razmika med vrsticami */
 p, li {
@@ -144,22 +140,22 @@ p, li {
 }
 
 #list li {
-	margin: 5px 0;
+	margin: 8px 0;
 	
 }
 
-/* slika delovanje na desni */
+/* slika delovanje na levi */
 .delovanje_slika {
 	margin-right: 15px;
 	float: left;
 }
 
-/* viri in slike z viri na desni,, velikost 1 */
+/* viri in slike z viri na levi, velikost 1 */
 .img-with-text_1 {
 	text-align: justify;
 	width: 305px;
 	float: left;
-	margin-right: 15px;
+	margin-right: 20px;
 	margin-bottom: 10px;
 }
 
@@ -168,12 +164,12 @@ p, li {
 	margin-bottom: 10px;
 }
 
-/* viri in slike z viri na levi, velikost 1 */
+/* viri in slike z viri na levi, velikost 2 */
 .img-with-text_2 {
 	text-align: justify;
-	width: 300px;
+	width: 280px;
 	float: left;
-	margin-right: 15px;
+	margin-right: 20px;
 	margin-bottom: 10px;
 }
 
@@ -182,42 +178,40 @@ p, li {
 	margin-bottom: 10px;
 }
 
-/* viri in slike z viri na desni, velikost 2 */
+/* viri in slike z viri, velikost 3 */
 .img-with-text_3 {
 	text-align: justify;
-	width: 280px;
-	float: left;
-	margin-right: 15px;
-	margin-bottom: 15px;
+	width: 600px;
 }
 
 .img-with-text_3 img {
 	display: block;
 	margin-bottom: 10px;
 }
-/* viri in slike z viri na levi, velikost 2 */
-.img-with-text_4 {
-	text-align: justify;
-	width: 600px;
-}
 
-.img-with-text_4 img {
-	display: block;
-	margin-bottom: 10px;
-}
-
-.picture_margin {
+/* nastavitve margin za lepši izgled strani */ 
+.margin_vodila {
 	margin-bottom: 25px;
 }
-.p_margin {
-	margin-top: 115px;
+
+.p_margin_delitev {
+	margin-top: 65px;
 }
-.p_margin2 {
-	margin-top: 150px;
+
+.p_margin_pomnilnik {
+	margin-top: 60px;
+} 
+
+.p_margin_UPO {
+	margin-top: 120px;
+}
+
+.margin_VI {
+	margin-top: 165px;
 }
 
 .text_margin {
-	margin-bottom: 150px;
+	margin-bottom: 65px;
 }
 
 
@@ -226,8 +220,9 @@ p, li {
 	font-size: 15px;
 }
 
+/* črta pri strojni opremi spodaj */
 hr {
   border-width: 1px;
   color: #660000;
-  margin-top: 190px;
+  margin-top: 140px;
 }
